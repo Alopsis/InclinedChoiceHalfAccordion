@@ -1,0 +1,84 @@
+* ,::after , ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerofcontainer{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+.container{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    
+
+}
+
+.item{
+    flex: 1 1 auto;
+    height: 100%;
+    width: auto;
+    transform: skewX(-45deg);
+    transition: flex 0.3s ease;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+.item-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: skewX(45deg);
+
+    position: absolute;
+
+}
+.item-title{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.item-btn{
+    padding: 10px 15px;
+    background-color: #333;
+    color: white; 
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 30px;
+    display: none;
+}
+.item:first-child{
+    background-image: linear-gradient(to right, #333 , #AAA);
+}
+.item:nth-child(2){
+    background-image: linear-gradient(to right, #333 , #AAA);
+
+}
+.item:nth-child(3){
+    background-image: linear-gradient(to right, #333 , #AAA);
+
+}
+.item:nth-child(4){
+    background-image: linear-gradient(to right, #333 , #AAA);
+
+}
+
+.item-active{
+    flex: 6 1 auto;
+
+}
+
+
+
+
+
